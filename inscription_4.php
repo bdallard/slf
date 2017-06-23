@@ -160,7 +160,7 @@ if ($_POST['next_step'] && !isset($output))
                         <td style="width: 50%; margin-top: 15px;"><p style="padding: 0;float: right;margin-right: 10px;">Étape 4/4</p></td>
                     </tr>
                 </table>
-                <h1>Attribution</h1>
+                <h1>Attribution de votre horaire de RDV</h1>
                 <?php
                     if (isset($output))
                     {
@@ -168,7 +168,9 @@ if ($_POST['next_step'] && !isset($output))
                     }
                     else
                     {
-                        echo '<p style="text-align: justify;"><b>Voilà ! vous allez recevoir par mail votre confirmation et votre plage horaire pour vous présenter à l’inscription et limiter votre délai d’attente.</b>
+                        echo '<p>Votre horaire de rendez-vous est : <b>' . $data[19] . '</b>.</p>';
+                        
+                        echo '<p style="text-align: justify;"><b>Vous allez recevoir par mail votre confirmation et votre plage horaire pour vous présenter à l’inscription et limiter votre délai d’attente.</b>
                         <br/><br/>
                         Pour chaque plage horaire vous serez entre 5 et 10 personnes invités à vous présenter à l’inscription.
                         Nous disposerons de 3 postes d’inscriptions pour permettre de traiter le maximum d’inscription le premier jour
@@ -178,8 +180,8 @@ if ($_POST['next_step'] && !isset($output))
                         Pour garantir le bon fonctionnement nous vous remercions de respecter scrupuleusement cette plage horaire. Si vous êtes en retard l’inscription ne sera plus possible. 
                         Toute l’équipe vous remercie par avance pour votre compréhension et votre indulgence.
                         </p>';
-                        echo '<p>Votre heure de passage est <b>' . $data[19] . '</b>.</p>';
-                        echo '<center><a style="font-size: 1.3em;" href="inscription_4_1.php">Aller plus loin pour faciliter l\'inscription</a></center>';
+                        echo '<br/>';
+                        echo '<center><a style="font-size: 1.3em;" href="inscription_4_1.php">Pour que votre inscription soit possible vous devez apporter un dossier complet le samedi 9 septembre 2017</a></center>';
                         echo '<br/>';
                     }
                 ?>

@@ -5,16 +5,16 @@
             {
                 echo '<table style="margin-left:auto; margin-right:auto;width: 760px;">
                         <tr style="font-size: 1.7em;color: white;text-align: center;">
-                            <td style="width: 25%;">1</td>
-                            <td style="width: 25%;">2</td>
-                            <td style="width: 25%;">3</td>
-                            <td style="width: 25%;">4</td>
+                            <td style="width: 20%;">1</td>
+                            <td style="width: 20%;">2</td>
+                            <td style="width: 20%;">3</td>
+                            <td style="width: 20%;">4</td>
                         </tr>
                         <tr style="font-size: 1.4em;color: white;text-align: center;">
                             <td>Accueil</td>
                             <td>Coordonnées</td>
-                            <td>Placement</td>
-                            <td>Attribution</td>
+                            <td>Valider vos coordonnées</td>
+                            <td>Attribution de votre horaire de RDV</td>
                         </tr>
                     </table>';
             }

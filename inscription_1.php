@@ -39,26 +39,29 @@ $isSubscribing = TRUE; // Affiche les étapes dans l'en-tête
                     </tr>
                 </table>
                 <h1>Bienvenue</h1>
-                <p style="text-align: justify;">Bienvenue sur le site internet du Centre Paris Anim’ Pôle Simon Le Franc destiné à générer une file d’attente pour le premier jour des inscriptions.<br/>
+                <p style="text-align: justify;">Bienvenue sur le site internet du Centre Paris Anim’ Pôle Simon Le Franc destiné à générer une file d’attente pour le premier jour des inscriptions.                     <font size="5">Le samedi 9 septembre</font> <br/>
                     <br/>
-                Fini les réveils à 5h du matin à l’ouverture des inscriptions et l’attente interminable pour avoir la certitude d’obtenir sa place dans l’atelier que vous souhaitez absolument !<br/>
+                Le principe est de vous attribuer un horaire de rendez-vous auquel vous présenter le premier jour des inscriptions en fonction de votre ordre de connexion. Seules les 230 premières personnes connectés se verront attribuer un horaire de passage pour le premier jour des inscriptions. Ensuite les inscriptions se poursuivent aux horaires habituels d’ouverture du Pôle Simon Le Franc.
                     <br/>
-                Cet outil va permettre de générer la file d’attente confortablement depuis chez vous. Mais attention la règle reste la même : <span style="text-decoration: underline;">premier arrivé premier à pouvoir s’inscrire</span> mais nous passons au <span style="text-decoration: underline;">premier connecté premier à pouvoir s’inscrire</span>.<br/>
-                    <br/>
-                Le principe est de vous donner une fourchette horaire à laquelle vous présenter le premier jour des inscriptions en fonction de votre ordre de connexion. Seules les 200 premières connexions se verront attribuer un horaire de passage pour le premier jour des inscriptions. Ensuite les inscriptions se poursuivent aux horaires habituels d’ouverture du Pôle Simon Le Franc.
-                    <br/><br/>
-                Attention il s’agit bien uniquement d’éviter aux plus courageux et/ou aux plus déterminés de faire la file d’attente parfois pendant plusieurs heures le premier jour des inscriptions. 
                 </p>
+                
+                <!--
                 <p style="text-align: center;"><img src="resources/pdf_download.png" style="width: 30px; margin: 0px 8px -7px 0;" />
                     <a href="files/ci.pdf">Conditions d'inscription</a>
                      - 
                     <a href="files/tarifs.pdf">Tarifs</a>
+                -->     
                 </p>
                 
-                <!-- ajouter petit paneau attention -->
-                <center><p style="font-size: 1.8em; font-weight: bold;"> ATTENTION ! Il ne s’agit pas d’une inscription en ligne.</p></center>
-                <p style="font-size: 0.8em;">Les champs marqués par une astérique rouge (<label style="color: red;">*</label>) sont nécessaires pour l'inscription.</p>
+                <center><p style="font-size: 1.8em; font-weight: bold;">ATTENTION ! Il ne s’agit pas d’une inscription en ligne.</p></center>
+                
+                
+                <!--
+                        champs obj formulaires 
 
+                <p style="font-size: 0.8em;">Les champs marqués par une astérique rouge (<label style="color: red;">*</label>) sont nécessaires pour l'inscription.</p>
+                --> 
+                
                 <!--<form method="post">
                         <table class="form" style="width: 100%">
                             <tr>
@@ -176,9 +179,14 @@ $isSubscribing = TRUE; // Affiche les étapes dans l'en-tête
 
                 <center>
                     <form method="post" action="inscription_2.php" onsubmit="return Validate();">
-                        <input type="checkbox" id="cb1" value="cb1"><label class="star_field" for="cb1">J’ai compris et j’accepte les conditions d’utilisation de ce service.</label><br/>
+                        <input type="checkbox" id="cb1" value="cb1"><label class="star_field" for="cb1">J’ai compris et j’accepte les conditions d’utilisation de ce service.</label><br/><br/> <br/> 
+                        <!--
                         <input type="checkbox" id="cb2" value="cb2"><label class="star_field" for="cb2">J’ai pris connaissance des conditions d’inscriptions et je les accepte.</label><br/><br/>
-                        <input type="submit" name="next_step" value="C'est parti !"><br/>
+                        -->
+                        
+                        
+                        <!-- grossir TOUS les bouttons de bas de page --> 
+                        <input type="submit" name="next_step" value="C'est parti !" class="search"><br/>
                     </form>
                 </center>
 

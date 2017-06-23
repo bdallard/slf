@@ -74,7 +74,7 @@ if ($_POST['next_step'])
                         <td style="width: 50%; margin-top: 15px;"><p style="padding: 0;float: right;margin-right: 10px;">Étape 3/4</p></td>
                     </tr>
                 </table>
-                <h1>Placement</h1>
+                <h1>Valider vos coordonnées</h1>
 
                 <!--<p>
                         <?php 
@@ -117,6 +117,7 @@ if ($_POST['next_step'])
                                     <input style="float: right; width: 100%;" type="text" name="fname" class="input_readonly" value="<?php echo $fname; ?>" name="lname" readonly>
                                 </td>
                             </tr>
+                            <!--
                             <tr>
                                 <td colspan="2" style="width: 50%;">
                                     <?php echo 'Sexe : ' . $sex; ?>  
@@ -126,11 +127,14 @@ if ($_POST['next_step'])
                                     <input type="date" name="birthday" class="input_readonly" value="<?php echo $birthday; ?>" name="birthday" readonly>
                                 </td>
                             </tr>
+                            -->
+                            
                         </table>
                     </fieldset>
                     <fieldset>
                         <legend>Coordonnées</legend>
                         <table class="form" style="width: 100%;">
+                            <!--
                             <tr>
                                 <td style="width: 200px;">
                                     <label for="address">Adresse :</label>
@@ -139,6 +143,8 @@ if ($_POST['next_step'])
                                     <input style="width: 100%;" type="text" name="address" class="input_readonly" value="<?php echo $address; ?>" readonly>
                                 </td>
                             </tr>
+                            --> 
+                            
                             <?php
                                 if ($address_plus != "")
                                 {
@@ -155,6 +161,7 @@ if ($_POST['next_step'])
                             
                         </table>
                         <table class="form" style="width: 100%">
+                            <!--
                             <tr>
                                 <td style="width: 140px;">
                                     <label for="zip">Code Postal :</label>
@@ -169,6 +176,8 @@ if ($_POST['next_step'])
                                     <input style="width: 100%;" type="text" name="city" class="input_readonly" value="<?php echo $city; ?>" readonly>
                                 </td>
                             </tr>
+                            --> 
+                            
                             <tr>
                                 <td style="width: 110px;">
                                     <label for="phone">Téléphone (fixe) :</label>
@@ -183,6 +192,7 @@ if ($_POST['next_step'])
                                     <input style="width: 100%;" type="text" name="GSM" class="input_readonly" value="<?php echo $gsm; ?>" readonly>
                                 </td>
                             </tr>
+                            
                             <tr>
                                 <td style="width: 110px;">
                                     <label for="mail">Adresse mail :</label>
@@ -191,6 +201,16 @@ if ($_POST['next_step'])
                                     <input style="width: 100%;" type="text" name="mail" class="input_readonly" value="<?php echo $mail; ?>" readonly> 
                                 </td>
                             </tr>
+                            
+                            <tr>
+                                <td style="width: 110px;">
+                                    <label for="mail">Confirmation :</label>
+                                </td>
+                                <td colspan="3">
+                                    <input style="width: 100%;" type="text" name="mail" class="input_readonly" value="<?php echo $mail; ?>" readonly> 
+                                </td>
+                            </tr>
+                            
                         </table>
                     </fieldset>
                     <fieldset>
@@ -208,6 +228,7 @@ if ($_POST['next_step'])
                             <tr/>
                         </table>
                     </fieldset>
+                        <br/> <br/>
                     <?php
                         if (isset($revenu_fiscal) && $revenu_fiscal != '')
                         {
@@ -271,7 +292,9 @@ if ($_POST['next_step'])
                             </fieldset>';
                         }
                     ?>
-                    <fieldset>
+
+                    <!--
+                        <fieldset>
                         <legend>Droits à l'image</legend>
                         <p style="text-align: center;"><a href="files/autor_image.pdf" target="_blank"><img src="resources/pdf_download.png" style="width: 30px; margin: 0px 8px -7px 0;" />Télécharger la fiche d'autorisation d'utilisation de l'image</a></p>
                         <table style="width: 100%">
@@ -288,8 +311,12 @@ if ($_POST['next_step'])
                         </table>
                         <span style="font-size: 0.8em;">Vous pourrez également restituer cette fiche signée le jour de l'inscription au secrétariat.</span>
                     </fieldset>
+                        
                     <p><i><b>ATTENTION : </b>Une fois le formulaire validé, il n'est plus possible de modifier les informations fournies ci-dessus. 
                     Assurez-vous de l'exactitude des données renseignées.</i></p>
+                    
+                    --> 
+                        
                     <?php
                         echo '<input type="hidden" name="period" value="'.htmlentities($period).'">';
                         echo '<input type="hidden" name="person" value="'.htmlentities($person).'">';
