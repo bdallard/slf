@@ -43,18 +43,24 @@ $link_planning = $link . '/files/tarifs.pdf';
                     
                     <li><strong>4</strong> - Une copier du carner de vaccination"à jour" pour l'activité jardinage. </li> <br/>
                     
-                    
-                    <li>Pièce à télécharger  </li> <br/>
-                    
-                    <li>La fiche d'inscription <a href="<?php echo $link_sub; ?>" target="_blank">ici</a> (<b>une fiche d’inscription par personne</b>)</li>
-                    
-                    <li>Les tarifs <a href="<?php echo $link_tarif ; ?>" target="_blank">à consulter ici</a></li>
-                    
-                    <li>La fiche de droit à l'image :<a href="<?php echo $link_droitimg ; ?>" target="_blank">ici</a></li>
-                    
-                    <li>Je consulte le planning des ateliers <a href="<?php echo $link_planning; ?>" target="_blank">planning des ateliers</a></li>
+                    </ul>
                 
+                <br/>
+                <h2>Les pièces à télécharger</h2>
+                    <ul>
+                    <br/>
+                    
+                    <li>Remplir la fiche d'inscription <a href="<?php echo $link_sub; ?>" target="_blank">ici</a> (<b>une fiche d’inscription par personne</b>)</li>
+                    
+                    <li>Consulter les tarifs <a href="<?php echo $link_tarif ; ?>" target="_blank">ici</a></li>
+                    
+                    <li>Remplir la fiche de droit à l'image :<a href="<?php echo $link_droitimg ; ?>" target="_blank">ici</a></li>
+                    
+                    <li>Consulter le planning des ateliers <a href="<?php echo $link_planning; ?>" target="_blank">planning des ateliers</a></li>
                 </ul>
+                <br/>
+                
+
                 <center><p style="font-size: 1.2em; font-weight: bold;">Toute l’équipe vous remercie et vous accueillera avec plaisir pour cette nouvelle saison </p></center>
             </div>
 
