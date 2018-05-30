@@ -1,3 +1,6 @@
-# slf
-projet inscription en ligne pôle simon le franc 
+# SLF
+JDC project for the Pôle Simon le Franc Paris 
+
+## check our website 
+http://juniordataconsulting.com/
 
